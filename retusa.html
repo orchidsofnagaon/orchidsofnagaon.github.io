@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="species.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Rhynchostylis retusa</title>
+  </head>
+  <body>
+    <header>
+      <div class="main">
+        <nav id="navbar">
+          <input type="checkbox" id="check">
+          <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+          </label>
+          <a href="index.html"><img id="logimg" src="logo.png"></a>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li class="active"><a href="classifications.html">CLASSIFICATIONS</a></li>
+            <li><a href="phylogeny.html">PHYLOGENY</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="title">
+        <h1>Rhynchostylis retusa</h1>
+      </div>
+      <div class="infobox">
+        <div class="sp-img">
+          <img src="img2.jpg" id="imgmod">
+          <p id="figdesc" style="font-style: italic">Fig: Rhynchostylis retusa</p>
+        </div>
+        <div class="sp-inf">
+          <div class="taxa">
+            <ul>
+              <li>Family: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Orchidaceae</li>
+              <li>Sub family: &nbsp;Orchidoideae</li>
+              <li>Tribe: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Epidendreae</li>
+              <li>Sub tribe: &nbsp;&nbsp;&nbsp;&nbsp;Sarcanthinae</li>
+              <li>Genus: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rhynchostylis</li>
+              <li>Species: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;retusa</li>
+            </ul>
+          </div>
+          <div class="aboutspc">
+            <h3>CHARACTERSTICS</h3>
+            <p id="char">Epiphytic Orchid. Plants erect, leafy, producing densly flowered de-curved inflorescence. Stem unbranched, coated with leaf-sheaths, 15-30cm long. Leaves 12-16, distichus, oblong, 18-30 x 3-5cm. Inflorescence racemes with densely many flowered, 40-50cm long. Flowers 2-2.5cm across, rose to whitish pink; sepals and petals are white spotted purple; dorsal sepals obtuse, ovate to oblong, 8.5 x 5.5mm; lateral sepals subacute or obtuse,obliquely and broadly ovate, 8.5 x 8.5mm; petals oblong-ovate to oblong elliptic, 8 x 5mm; lip pale mauve; column 4-6mm long; anther 2-celled; pollinia 2, globose-pyriform.<p>
+            <br>
+            <h3>IMPORTANCE</h3>
+            <p>⦁ High aesthetic value, collector's delightful species.</p>
+            <p>⦁ Flowering time : March-May.</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <footer class="footer">
+     <p>Designed by <a href="hehe.mp4"><span id="dev">Hirakjyoti Acharjya</span></a> | 2020</p>
+    </footer>
+<!--SCROLL-NAV UP ON MOBILE-->
+    <script>
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function() {
+      var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById("navbar").style.top = "0";
+        } else {
+          document.getElementById("navbar").style.top = "-105px";
+        }
+        prevScrollpos = currentScrollPos;
+      }
+    </script>
+  </body>
+</html>

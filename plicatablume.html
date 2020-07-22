@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="species.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Spathoglottis plicata blume</title>
+  </head>
+  <body>
+    <header>
+      <div class="main">
+        <nav id="navbar">
+          <input type="checkbox" id="check">
+          <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+          </label>
+          <a href="index.html"><img id="logimg" src="logo.png"></a>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li class="active"><a href="classifications.html">CLASSIFICATIONS</a></li>
+            <li><a href="phylogeny.html">PHYLOGENY</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="title">
+        <h1>Spathoglottis plicata blume</h1>
+      </div>
+      <div class="infobox">
+        <div class="sp-img">
+          <img src="img2.jpg" id="imgmod">
+          <p id="figdesc" style="font-style: italic">Fig: Spathoglottis plicata blume</p>
+        </div>
+        <div class="sp-inf">
+          <div class="taxa">
+            <ul>
+              <li>Family: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="lulz">Orchidaceae</span></li>
+              <li>Sub family: &nbsp;<span id="lulz">Orchidoideae</span></li>
+              <li>Tribe: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="lulz">Epidendreae</span></li>
+              <li>Sub tribe: &nbsp;&nbsp;&nbsp;&nbsp;<span id="lulz">Bletiine</span></li>
+              <li>Genus: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="lulz">Spathoglottis</span></li>
+              <li>Species: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="lulz">plicata</span></li>
+            </ul>
+          </div>
+          <div class="aboutspc">
+            <h3>CHARACTERSTICS</h3>
+            <p id="char">Terrestrial orchid, 62.5cm-75cm in height. Pseudobulbs ovoid in shape, completely covered by leaf sheaths and fleshy bracts. Leaves 5-8 acute, subacute, at apex, many nerved, oblong, lanceolate, 20-50 X 3-8cm, petioles with sheaths at base, 15-30cm long. Inflorescence raceme bearing 10-12 flowers, 50-80cm long. Flowers 5-8cm across, radish purple, floral bracts large, ovate; dorsal sepals elliptic, ovate, sessile, 2.3 x 1.0cm; lateral sepals clawed, ovate-lanceolate, 2.5 x 1cm. Petals pink, elliptic, acute at apex, 2.5 x 1.5cm; lip sessile, trilobed, 1.5-2cm long; column thin, winged, bent towards the lip; anther depressed, two chambered, 1.8 x 2.3mm; pollinia 8, on a common branch, gland present. Ovary not resupinate.<p>
+            <br>
+            <h3>IMPORTANCE</h3>
+            <p>⦁ A suitable candidate for gardening.</p>
+            <p>⦁ Flowering time : June-July.</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <footer class="footer">
+     <p>Designed by <a href="hehe.mp4"><span id="dev">Hirakjyoti Acharjya</span></a> | 2020</p>
+    </footer>
+<!--SCROLL-NAV UP ON MOBILE-->
+    <script>
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function() {
+      var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById("navbar").style.top = "0";
+        } else {
+          document.getElementById("navbar").style.top = "-105px";
+        }
+        prevScrollpos = currentScrollPos;
+      }
+    </script>
+  </body>
+</html>

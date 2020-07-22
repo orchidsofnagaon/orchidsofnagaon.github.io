@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="species.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Dendrobium formosum</title>
+  </head>
+  <body>
+    <header>
+      <div class="main">
+        <nav id="navbar">
+          <input type="checkbox" id="check">
+          <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+          </label>
+          <a href="index.html"><img id="logimg" src="logo.png"></a>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li class="active"><a href="classifications.html">CLASSIFICATIONS</a></li>
+            <li><a href="phylogeny.html">PHYLOGENY</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="title">
+        <h1>Dendrobium formosum</h1>
+      </div>
+      <div class="infobox">
+        <div class="sp-img">
+          <img src="img2.jpg" id="imgmod">
+          <p id="figdesc" style="font-style: italic">Fig: Dendrobium formosum</p>
+        </div>
+        <div class="sp-inf">
+          <div class="taxa">
+            <ul>
+              <li>Family: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Orchidaceae</li>
+              <li>Sub family: &nbsp;Orchidoideae</li>
+              <li>Tribe: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Epidendreae</li>
+              <li>Sub tribe: &nbsp;&nbsp;&nbsp;&nbsp;Dendrobinae</li>
+              <li>Genus: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dendrobium</li>
+              <li>Species: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;formosum</li>
+            </ul>
+          </div>
+          <div class="aboutspc">
+            <h3>CHARACTERSTICS</h3>
+            <p id="char">Stem stout, many noded, erect, 20-45 x 12-15mm; sheaths covered with black hairs. Leaves oblong, unequally lobed at the apex, 7.4-14.4cm x 2.3-3.2cm. Inflorescence racemes, 3-4 flowers. Flowers large, white, 7-15cm across, sepals oblong-lanceolate, acute-accuminate, white, 5.5 x 2.0cm; petals broader, subarbicular, margins undulate, 5.5x4.5cm, white; lip broadly ovate, lateral lobes obscure, rounded; midlobe dialated, apiculated, 6.7cm long, column stout, white; anther quadrate.<p>
+            <br>
+            <h3>IMPORTANCE</h3>
+            <p>⦁ Collector delightfull species.</p>
+            <p>⦁ Flowering time : May-June.</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <footer class="footer">
+     <p>Designed by <a href="hehe.mp4"><span id="dev">Hirakjyoti Acharjya</span></a> | 2020</p>
+    </footer>
+<!--SCROLL-NAV UP ON MOBILE-->
+    <script>
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function() {
+      var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById("navbar").style.top = "0";
+        } else {
+          document.getElementById("navbar").style.top = "-105px";
+        }
+        prevScrollpos = currentScrollPos;
+      }
+    </script>
+  </body>
+</html>

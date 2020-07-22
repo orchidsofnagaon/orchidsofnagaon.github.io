@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="species.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Aerides multiflora</title>
+  </head>
+  <body>
+    <header>
+      <div class="main">
+        <nav id="navbar">
+          <input type="checkbox" id="check">
+          <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+          </label>
+          <a href="index.html"><img id="logimg" src="logo.png"></a>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li class="active"><a href="classifications.html">CLASSIFICATIONS</a></li>
+            <li><a href="phylogeny.html">PHYLOGENY</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="title">
+        <h1>Aerides multiflora</h1>
+      </div>
+      <div class="infobox">
+        <div class="sp-img">
+          <img src="img2.jpg" id="imgmod">
+          <p id="figdesc" style="font-style: italic">Fig: Aerides multiflora</p>
+        </div>
+        <div class="sp-inf">
+          <div class="taxa">
+            <ul>
+              <li>Family: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Orchidaceae</li>
+              <li>Sub family: &nbsp;Orchidoideae</li>
+              <li>Tribe: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Epidendreae</li>
+              <li>Sub tribe: &nbsp;&nbsp;&nbsp;&nbsp;Sarcanthinae</li>
+              <li>Genus: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Aerides</li>
+              <li>Species: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;multiflora</li>
+            </ul>
+          </div>
+          <div class="aboutspc">
+            <h3>CHARACTERSTICS</h3>
+            <p id="char">Stems usually curved, covered with stout leaf sheaths. Leaves oblong, leathery, 19 x 3.5cm. Inflorescence racemes, densly flowered, pendent; penduncle green. Flowers reddish, fragrant, 2.5cm across; sepals and petals subequal; dorsal sepal oblong, rounded and emarginate at the apex, 0.9 x 0.7cm; lateral sepals obutuse, obovate, 0.8 x 0.7cm petals elliptic oblong, emarginate, 1 x 0.6cm; lip trilobed, reddish-purple with dark red transverse treaks; pollinia 2, globular, yellow.<p>
+            <br>
+            <h3>IMPORTANCE</h3>
+            <p>⦁ Attractive Orchid, suitable for cut flower.</p>
+            <p>⦁ Flowering time : April-May.</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <footer class="footer">
+     <p>Designed by <a href="hehe.mp4"><span id="dev">Hirakjyoti Acharjya</span></a> | 2020</p>
+    </footer>
+<!--SCROLL-NAV UP ON MOBILE-->
+    <script>
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function() {
+      var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById("navbar").style.top = "0";
+        } else {
+          document.getElementById("navbar").style.top = "-105px";
+        }
+        prevScrollpos = currentScrollPos;
+      }
+    </script>
+  </body>
+</html>
