@@ -62,20 +62,6 @@ nav ul li.active a, nav ul li a:hover{
   transition: all 0.7s ease;
 }
 
-.checkbtn{
-  font-size: 30px;
-  color: #bd669d;
-  float: right;
-  line-height: 100px;
-  margin-right: 40px;
-  cursor: pointer;
-  display: none;
-}
-
-#check{
-  display: none;
-}
-
 .title{
   width: 85%;
   height: 130px;
@@ -211,25 +197,28 @@ footer p a{
   @media screen and (max-width: 600px){
 
     nav{
-      position: relative;
+      height: 80px;
     }
 
     #logimg{
-      margin-left: 30px;
+      width: 65px;
+      height: 65px;
+      margin-top: 7px;
+      margin-left: 27px;
     }
 
     .hamburger{
       position: absolute;
       cursor: pointer;
-      right: 5%;
-      top: 28%;
+      right: 7.5%;
+      top: 25%;
       transform: translate(-5%, 0%);
     }
   
     .hamburger .line{
-      width: 35px;
-      height: 5px;
-      margin: 8px auto;
+      width: 30px;
+      height: 4px;
+      margin: 7px auto;
       border-radius: 4px;
       display: block;
       background-color: #bd669d;
@@ -243,17 +232,17 @@ footer p a{
     }
     
     .hamburger.is-active .line:nth-child(1) {
-      -webkit-transform: translateY(13px) rotate(45deg);
-      -ms-transform: translateY(13px) rotate(45deg);
-      -o-transform: translateY(13px) rotate(45deg);
-      transform: translateY(13px) rotate(45deg);
+      -webkit-transform: translateY(11px) rotate(45deg);
+      -ms-transform: translateY(11px) rotate(45deg);
+      -o-transform: translateY(11px) rotate(45deg);
+      transform: translateY(11px) rotate(45deg);
     }
     
     .hamburger.is-active .line:nth-child(3) {
-      -webkit-transform: translateY(-13px) rotate(-45deg);
-      -ms-transform: translateY(-13px) rotate(-45deg);
-      -o-transform: translateY(-13px) rotate(-45deg);
-      transform: translateY(-13px) rotate(-45deg);
+      -webkit-transform: translateY(-11px) rotate(-45deg);
+      -ms-transform: translateY(-11px) rotate(-45deg);
+      -o-transform: translateY(-11px) rotate(-45deg);
+      transform: translateY(-11px) rotate(-45deg);
     }
 
     .nav-links{
@@ -261,7 +250,7 @@ footer p a{
       background: #bd669d;
       height: 100vh;
       width: 100%;
-      top: 100px;
+      top: 80px;
       clip-path: circle(40px at 90% -10%);
       -webkit-clip-path: circle(40px at 90% -10%);
       transition: all 0.7s ease-out;
@@ -333,4 +322,4 @@ footer p a{
     .genus ul li a:hover{
       box-shadow: 0 0 0px #F06292, 0 0 0px #F06292, 0 0 0px #F06292;
     }
-}
+  }

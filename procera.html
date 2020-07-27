@@ -3,20 +3,20 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="species.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" type="text/css" href="species.css">
     <title>Goodyera procera</title>
   </head>
   <body>
     <header>
       <div class="main">
         <nav id="navbar">
-          <input type="checkbox" id="check">
-          <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-          </label>
+          <div class="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
           <a href="index.html"><img id="logimg" src="logo.png"></a>
           <ul>
             <li><a href="index.html">HOME</a></li>
@@ -57,20 +57,39 @@
       </div>
     </header>
     <footer class="footer">
-     <p>Designed by <a href="hehe.mp4"><span id="dev">Hirakjyoti Acharjya</span></a> | 2020</p>
+      <p>Designed by <span id="dev">Hirakjyoti Acharjya</span> | 2020</p>
     </footer>
-<!--SCROLL-NAV UP ON MOBILE-->
+<!--script for respo-nav-burg anim-->
     <script>
-      var prevScrollpos = window.pageYOffset;
-      window.onscroll = function() {
-      var currentScrollPos = window.pageYOffset;
-        if (prevScrollpos > currentScrollPos) {
-          document.getElementById("navbar").style.top = "0";
-        } else {
-          document.getElementById("navbar").style.top = "-105px";
+      const hamBurger = document.querySelector('.hamburger');
+      const navLinks = document.querySelector('.nav-links');
+      const links = document.querySelectorAll('.nav-links li');
+      hamBurger.addEventListener("click", () => {
+        hamBurger.classList.toggle("is-active");
+        navLinks.classList.toggle("open");
+        links.forEach(link =>{
+          link.classList.toggle("fade");
+        });
+      });
+    </script>
+<!--nav up on larger screens-->
+    <script>
+      var mq = window.matchMedia( "(min-width: 601px)" );
+      if (mq.matches) {
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+          } else {
+            document.getElementById("navbar").style.top = "-105px";
+          }
+          prevScrollpos = currentScrollPos;
         }
-        prevScrollpos = currentScrollPos;
-      }
+    }
+      else {
+        thisFunctionDoesNotExistAndWasCreatedWithTheOnlyPurposeOfStopJavascriptExecutionOfAllTypesIncludingCatchAndAnyArbitraryWeirdScenario();
+    }
     </script>
   </body>
 </html>
