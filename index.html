@@ -11,7 +11,7 @@
   <body>
     <header>
       <div class="main">
-        <nav>
+        <nav id="navbar">
           <div class="hamburger">
             <span class="line"></span>
             <span class="line"></span>
@@ -48,6 +48,25 @@
           link.classList.toggle("fade");
         });
       });
+    </script>
+<!--SCROLL-NAV UP ON MOBILE-->
+    <script>
+      var mq = window.matchMedia( "(min-width: 601px)" );
+      if (mq.matches) {
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+          } else {
+            document.getElementById("navbar").style.top = "-105px";
+          }
+          prevScrollpos = currentScrollPos;
+        }
+    }
+      else {
+        thisFunctionDoesNotExistAndWasCreatedWithTheOnlyPurposeOfStopJavascriptExecutionOfAllTypesIncludingCatchAndAnyArbitraryWeirdScenario();
+    }
     </script>
   </body>
 </html>
