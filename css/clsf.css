@@ -5,7 +5,7 @@
 }
 
 body{
-	background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(image.jpg);
+	background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(../image/image.jpg);
   height: 100%;
   background-size: contain;
   background-position: center;
@@ -146,18 +146,10 @@ nav ul li.active a, nav ul li a:hover{
 }
 
 .footer p{
-  color: #fff;
+  color: #f3b35e;
   font-size: 14px;
   text-align: center;
   line-height: 25px;
-}
-
-footer p a{
-  text-decoration: none;
-}
-
-#dev{
-  color: #f3b35e;
 }
 
 @media screen and (max-width: 768px){
