@@ -3,22 +3,31 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="inds.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" type="text/css" href="phylo.css">
     <title>Phylogeny</title>
+    <script>
+      function change1() 
+      {
+        document.getElementById("changing_img").innerHTML='<embed type = "application/pdf" src=phytree_upgma.pdf style="width:100%; height:100vh">';
+      }
+
+      function change2() 
+      {
+        document.getElementById("changing_img").innerHTML='<embed type = "application/pdf" src=phytree_nejo.pdf style="width:100%; height:100vh">';
+      }
+    </script>
   </head>
   <body>
     <header>
       <div class="main">
-        <nav>
-          <input type="checkbox" id="check">
-          <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-          </label>
-          <a href="index.html"><img src="logo.png" width="95px" height="95px" style="margin-left: 20px"></a>
-          <ul>
+        <nav id="navbar">
+          <div class="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
+          <a href="index.html"><img id="logimg" src="logo.png"></a>
+          <ul class="nav-links">
             <li><a href="index.html">HOME</a></li>
             <li><a href="classifications.html">CLASSIFICATIONS</a></li>
             <li class="active"><a href="#">PHYLOGENY</a></li>
@@ -27,11 +36,42 @@
         </nav>
       </div>
       <div class="title">
-        <h1 style="color: red; text-decoration: none;">WEBPAGE UNDER CONSTRUCTION</h1>
+        <h1>Phylogenetic Analysis</h1>
       </div>
-      </header>
-      <footer class="footer">
-       <p>Designed by <a href="hehe.mp4"><span id="dev">Hirakjyoti Acharjya</span></a> | 2020</p>
-      </footer>
-    </body>
-  </html>
+      <div class="butnx">
+        <a onclick="change1()"><button id="but">Phylogenetic Tree by UPGMA method</button></a>
+        <a onclick="change2()"><button id="but">Phylogenetic Tree by Neighbour-Joining method</button></a>
+      </div>
+      <div id="changing_img"></div>
+    </header>
+    <footer class="footer">
+      <p>Designed by <span id="dev">Hirakjyoti Acharjya</span> | 2020</a></p>
+    </footer>
+<!--script for respo-nav-burg anim-->
+    <script>
+      const hamBurger = document.querySelector('.hamburger');
+      const navLinks = document.querySelector('.nav-links');
+      const links = document.querySelectorAll('.nav-links li');
+      hamBurger.addEventListener("click", () => {
+        hamBurger.classList.toggle("is-active");
+        navLinks.classList.toggle("open");
+        links.forEach(link =>{
+          link.classList.toggle("fade");
+        });
+      });
+    </script>
+    <!--SCROLL-NAV UP ON larger screens-->
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+          } else {
+            document.getElementById("navbar").style.top = "-105px";
+          }
+          prevScrollpos = currentScrollPos;
+        }
+    </script>
+  </body>
+</html>
