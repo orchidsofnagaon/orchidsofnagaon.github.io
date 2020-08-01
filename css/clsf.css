@@ -153,6 +153,7 @@ nav ul li.active a, nav ul li a:hover{
 }
 
 @media screen and (max-width: 768px){
+
   #logimg{
     width: 80px;
     height: 80px;
@@ -196,13 +197,13 @@ nav ul li.active a, nav ul li a:hover{
       width: 65px;
       height: 65px;
       margin-top: 7px;
-      margin-left: 27px;
+      margin-left: 10px;
     }
 
     .hamburger{
       position: absolute;
       cursor: pointer;
-      right: 7.5%;
+      right: 4.2%;
       top: 25%;
       transform: translate(-5%, 0%);
     }
@@ -295,11 +296,12 @@ nav ul li.active a, nav ul li a:hover{
     }
   
     .title, .genus{
+    	width: 92%;
       border: none;
     }
 
     .title h1{
-      font-size: 38px;
+      font-size: 32px;
     }
 
     .genus ul li a{
