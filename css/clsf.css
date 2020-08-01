@@ -189,6 +189,10 @@ nav ul li.active a, nav ul li a:hover{
 
   @media screen and (max-width: 600px){
 
+  	.main{
+    	height: 80px;
+  	}
+
     nav{
       height: 80px;
     }
