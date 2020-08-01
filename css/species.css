@@ -66,7 +66,7 @@ nav ul li.active a, nav ul li a:hover{
   width: 95%;
   height: 130px;
   margin: 0 auto;
-  background-color: #0009;
+  background-color: #0005;
   border-top: 2px solid #fff;
   border-left: 2px solid #fff;
   border-right: 2px solid #fff;
@@ -87,7 +87,7 @@ nav ul li.active a, nav ul li a:hover{
   height: auto;
   margin: 0 auto;
   border: 2px solid #fff;
-  background-color: #0009;
+  background-color: #0005;
 }
 
 .sp-img{
@@ -324,7 +324,7 @@ nav ul li.active a, nav ul li a:hover{
   }
 
   .title h1{
-    font-size: 28px;
+    font-size: 26px;
   }
 
   .sp-img{

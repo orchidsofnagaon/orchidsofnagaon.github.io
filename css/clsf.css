@@ -63,12 +63,13 @@ nav ul li.active a, nav ul li a:hover{
 }
 
 .title{
-  width: 85%;
+  width: 95%;
   height: 130px;
   margin: 0 auto;
   border-top: 2px solid #fff;
   border-left: 2px solid #fff;
   border-right: 2px solid #fff;
+  background-color: #0005;
 }
 
 .title h1{
@@ -81,12 +82,13 @@ nav ul li.active a, nav ul li a:hover{
 }
 
 .genus{
-  width: 85%;
+  width: 95%;
   height: auto;
   margin: 0 auto;
   padding-top: 10px;
   padding-bottom: 25px;
   border: 2px solid #fff;
+  background-color: #0005;
 }
 
 .genus ul{
@@ -305,7 +307,7 @@ nav ul li.active a, nav ul li a:hover{
     }
 
     .title h1{
-      font-size: 32px;
+      font-size: 30px;
     }
 
     .genus ul li a{

@@ -37,7 +37,7 @@
         </nav>
       </div>
       <div class="title">
-        <h1>PHYLOGENETIC ANALYSIS</h1>
+        <h1>PHYLOGENY</h1>
       </div>
       <div class="butnx">
         <a onclick="change1()"><button id="but1">UPGMA<br>method</button></a>
@@ -48,6 +48,7 @@
     <footer class="footer">
       <p>&copy; ORCHIDS OF NAGAON | 2020</p>
     </footer>
+
 <!--script for respo-nav-burg anim-->
     <script>
       const hamBurger = document.querySelector('.hamburger');
@@ -61,8 +62,11 @@
         });
       });
     </script>
-    <!--SCROLL-NAV UP ON larger screens-->
+
+<!--SCROLL-NAV UP ON larger screens-->
     <script>
+      var mq = window.matchMedia( "(min-width: 601px)" );
+      if (mq.matches) {
         var prevScrollpos = window.pageYOffset;
         window.onscroll = function() {
         var currentScrollPos = window.pageYOffset;
@@ -73,6 +77,10 @@
           }
           prevScrollpos = currentScrollPos;
         }
+    }
+      else {
+        thisFunctionDoesNotExistAndWasCreatedWithTheOnlyPurposeOfStopJavascriptExecutionOfAllTypesIncludingCatchAndAnyArbitraryWeirdScenario();
+    }
     </script>
   </body>
 </html>
