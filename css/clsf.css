@@ -123,6 +123,7 @@ nav ul li.active a, nav ul li a:hover{
 }
 
 .species li a{
+	display: table;
   font-size: 18px;
   background-color: #c4c4c4;
   text-decoration: none;
@@ -185,7 +186,7 @@ nav ul li.active a, nav ul li a:hover{
   }
 
   .species li a{
-    font-size: 14px;
+    font-size: 18px;
     padding: 2px 4px;
   }
 
@@ -311,12 +312,12 @@ nav ul li.active a, nav ul li a:hover{
     }
 
     .genus ul li a{
-      font-size: 20px;
-      display: block;
+      font-size: 16px;
+      display: table;
     }
 
     .species li a{
-      padding: 4px 8px;
+      padding: 8px 8px;
     }
 
     .genus ul li a:hover{
