@@ -85,7 +85,31 @@ span .of{
 }
 
 .btn{
-	padding: 10px 30px;
+  padding: 10px 30px;
+  border: 1px dotted;
+  color: #fff;
+  font-size: 23px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.5s ease
+}
+
+.btn:hover{
+  border: none;
+  color: #000;
+  background: #bd669d;
+  box-shadow: 0 0 10px #bd669d, 0 0 20px #bd669d, 0 0 40px #bd669d;
+}
+
+.ackn{
+  position: absolute;
+  top: 69%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.ack{
+	padding: 10px 20px;
   border: 1px dotted;
 	color: #fff;
 	font-size: 23px;
@@ -94,7 +118,7 @@ span .of{
 	transition: 0.5s ease
 }
 
-.btn:hover{
+.ack:hover{
   border: none;
 	color: #000;
 	background: #bd669d;
@@ -133,7 +157,7 @@ span .of{
     font-size: 50px;
   }
 
-  .btn{
+  .btn, .ack{
     font-size: 20px;
   }
 }
@@ -249,7 +273,7 @@ span .of{
   }
 
   .title{
-    top: 45%;
+    top: 44%;
   }
 
   .title h1{
@@ -262,7 +286,7 @@ span .of{
   }
 
   .button{
-    top: 67%;
+    top: 62%;
   }
 
   .btn{
@@ -275,6 +299,23 @@ span .of{
   }
 
   .btn:hover{
+    box-shadow: 0 0 0px #bd669d, 0 0 0px #bd669d, 0 0 0px #bd669d;
+  }
+
+  .ackn{
+    top: 71%;
+  }
+
+  .ack{
+    padding: 8px 10px;
+    font-size: 18px;
+    color: #000;
+    border: 1px solid #bd669d;
+    border-radius: 3px;
+    background: #bd669d;
+  }
+
+  .ack:hover{
     box-shadow: 0 0 0px #bd669d, 0 0 0px #bd669d, 0 0 0px #bd669d;
   }
 }
