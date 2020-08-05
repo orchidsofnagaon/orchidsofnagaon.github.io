@@ -131,8 +131,9 @@ nav ul li.active a, nav ul li a:hover{
   nav ul li a{
     font-size: 14px;
   }
+}
 
-  @media screen and (max-width: 768px){
+@media screen and (max-width: 768px){
 
   #logimg{
     width: 80px;
@@ -274,3 +275,4 @@ nav ul li.active a, nav ul li a:hover{
       color: #08457e;
       box-shadow: none;
     }
+  }
