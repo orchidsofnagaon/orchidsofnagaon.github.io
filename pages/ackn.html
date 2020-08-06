@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/ackn.css">
+    <title>Acknowledgement</title>
+  </head>
+  <body>
+    <header>
+      <div class="nav">
+        <nav id="navbar">
+          <div class="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
+          <a href="../index.html"><img id="logimg" src="../image/logo.png"></a>
+          <ul class="nav-links">
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="classifications.html">CLASSIFICATIONS</a></li>
+            <li><a href="phylogeny.html">PHYLOGENY</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="main">
+        <h2>ACKNOWLEDGEMENT</h2>
+        <p>The success and outcome of this project were possible by the guidance and support from many individuals. We are incredibly privileged to have got this all along with the achievement of our project. It required a lot of effort from each individual involved in this project with us and we would like to take the opportunity to express our heartfelt gratitude to those noble personages without the guidance, advice and encouragement of whom this project would not have been completed.
+          <br><br>Firstly, We are immensely grateful to Mr. Hiranya Kr. Chaliha sir, Principal, Kaliabor College, for granting us an opportunity to work on this project.
+          <br><br>We put on our deepest gratitude and heartfelt indebtness to our guide Mr. Parag Nath sir, Assistant Professor, Department of Biotechnology, Kaliabor College, for providing us with all the support, his invaluable guidance and constant supervision which helped us in the completion of the project in due time.
+          <br><br>We are also thankful for and lucky enough to get consistent encouragement, support and supervision from all faculty members of Department of Biotechnology, Kaliabor College.
+        <br><br>Last but not the least, we extend our gratitude to Dr. Basistha Kalita sir, and Chiranjeev Bezbaruah sir, Department of Botany, Kaliabor College, for providing us with the booklet of their wonderful literary expertise on Orchid species of Nagaon district which helped us immensely in our endeavour.</p>
+        <p id="desg">Hirakjyoti Acharjya<br>Pranjal Mahanta<br>B.sc Biotechnology 6th Sem<br>Kaliabor College<br>Academic Year: 2020</p>
+      </div>
+    </header>
+    <footer class="footer">
+      <p>&copy; ORCHIDS OF NAGAON | 2020</p>
+    </footer>
+<!--script for respo-nav-burg anim-->
+    <script>
+      const hamBurger = document.querySelector('.hamburger');
+      const navLinks = document.querySelector('.nav-links');
+      const links = document.querySelectorAll('.nav-links li');
+      hamBurger.addEventListener("click", () => {
+        hamBurger.classList.toggle("is-active");
+        navLinks.classList.toggle("open");
+        links.forEach(link =>{
+          link.classList.toggle("fade");
+        });
+      });
+    </script>
+<!--nav up on larger screens-->
+    <script>
+      var mq = window.matchMedia( "(min-width: 601px)" );
+      if (mq.matches) {
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+          } else {
+            document.getElementById("navbar").style.top = "-105px";
+          }
+          prevScrollpos = currentScrollPos;
+        }
+    }
+      else {
+        thisFunctionDoesNotExistAndWasCreatedWithTheOnlyPurposeOfStopJavascriptExecutionOfAllTypesIncludingCatchAndAnyArbitraryWeirdScenario();
+    }
+    </script>
+  </body>
+</html>
