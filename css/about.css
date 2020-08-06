@@ -73,13 +73,13 @@ nav ul li.active a, nav ul li a:hover{
 .main h2{
   color: #fff000;
   text-align: center;
-  padding-top: 20px;
+  padding-top: 10px;
   text-decoration: underline;
 }
 
 .main p{
   text-align: justify;
-  padding: 30px 30px 0px 30px;
+  padding: 10px 40px 0px 40px;
   font-size: 18px;
   color: #f3f3f3;
 }
